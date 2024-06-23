@@ -8,6 +8,8 @@ import { BackgroundHero } from "@/components/BackgroundHero";
 import fig10 from '@/assets/imgs/fig10-paybank.png'
 import { CreditCardVerse } from "@/components/CreditCard/CreditCardVerse"
 import { CreditCardFront } from "@/components/CreditCard/CreditCardFront";
+import { IconCircle } from "@/components/IconCircle";
+import { LinkButtonSpecial } from "@/components/LinkButtonSpecial";
 
 export function HomeHero() {
     return (
@@ -15,11 +17,11 @@ export function HomeHero() {
             <BackgroundHero />
 
             <section className="container mx-auto py-32 px-6 h-auto md:h-[95vh]" id="">
-                <div className="size-full flex items-center justify-center gap-10">
+                <div className="size-full flex items-center justify-center flex-col gap-10 lg:flex-row">
                     <div className="flex-1">
-                        <h6 className="font-header font-bold text-2xl uppercase leading-[140%] inline-block bg-gradient-g5 bg-clip-text text-transparent relative after:content-[''] after:absolute after:top-1/2 after:-right-[40%] after:w-16 after:h-[2px] after:bg-primary-500">uma nova era</h6>
+                        <h6 className="font-header font-bold text-xl uppercase leading-[140%] inline-block bg-gradient-g5 bg-clip-text text-transparent relative after:content-[''] after:absolute after:top-1/2 after:-right-1/2 after:w-16 after:h-[2px] after:bg-primary-500">uma nova era</h6>
 
-                        <h1 className="text-white-normal lg:text-7xl md:text-5xl text-4xl font-header font-normal leading-[110%]">
+                        <h1 className="text-white-normal text-6xl lg:text-7xl font-header font-normal leading-[110%]">
                             O banco <span className="icon1-hero">&nbsp;</span>
                             pra chamar de <span className="icon2-hero">&nbsp;</span> <span className="color-gradient">seu</span>
                         </h1>
@@ -29,29 +31,31 @@ export function HomeHero() {
                             facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque.
                         </p>
 
-                        <a href="#" className="btn mt-8">Junte-se a nós</a>
+                        <div className="my-10">
+                            <LinkButtonSpecial name="Junte-se a nós" url="#" />
+                        </div>
 
-                        <div className="mt-8">
+                        <div className="">
                             <Image src={fig10} className="max-w-44 md:max-w-56 transition-all" alt="" loading="lazy" />
                         </div>
                     </div>
 
                     <div className="flex-1 flex items-center justify-center">
-                        <div className="relative w-full h-96">
-                            <CreditCardFront className="absolute top-[15%] left-[10%] transform-card-front-hero animate-card-transform-front" />
+                        <div className="relative size-96 lg:w-full lg:h-96">
                             <CreditCardVerse className="absolute top-1/4 right-[15%] -skew-x-12 skew-y-12 rotate-45 animate-card-transform-verse" />
+                            <CreditCardFront className="absolute top-[15%] left-[10%] transform-card-front-hero animate-card-transform-front" />
 
-                            <div className="z-10 absolute top-[60%] left-0 w-12 min-w-12 h-12 rounded-full mr-2 bg-white-light flex items-center justify-center transition-all">
+                            <IconCircle variant="secondary" className="z-10 absolute top-[60%] left-0 transition-all">
                                 <IconSmartphone />
-                            </div>
+                            </IconCircle>
 
-                            <div className="z-10 absolute top-[20%] left-3/4 w-12 min-w-12 h-12 rounded-full mr-2 bg-white-light flex items-center justify-center transition-all">
+                            <IconCircle variant="secondary" className="z-10 absolute top-[20%] left-3/4 transition-all">
                                 <IconFingerprint />
-                            </div>
+                            </IconCircle>
 
-                            <div className="z-10 absolute top-[90%] left-[55%] w-12 min-w-12 h-12 rounded-full mr-2 bg-white-light flex items-center justify-center transition-all">
+                            <IconCircle variant="secondary" className="z-10 absolute top-[90%] left-[55%] transition-all">
                                 <IconShield />
-                            </div>
+                            </IconCircle>
                         </div>
                     </div>
                 </div>

@@ -60,11 +60,15 @@ const config: Config = {
                 'gradient-g5': 'linear-gradient(224.78deg, #65744D 8.12%, #A9C96B 92.21%)',
                 'gradient-g6': 'linear-gradient(217.08deg, rgba(187, 231, 104, 0.6) 2.12%, rgba(73, 96, 34, 0.6) 98.96%)',
                 'gradient-g7': 'linear-gradient(225deg, rgba(62, 79, 29, 0.9) 2.12%, rgba(89, 102, 67, 0.9) 98.96%)',
+
+                'btn': "url('/assets/svgs/btn.svg')",
+                'btn-arrow': "url('/assets/svgs/btn-arrow.svg')",
             },
             boxShadow: {
                 s1: '0px 7px 32px rgba(92, 118, 46, 0.6)',
                 s2: '0px 3px 16px rgba(44, 64, 10, 0.2)',
                 s3: '12px 32px 72px rgba(78, 89, 59, 0.4)',
+                s4: '0px 7px 56px rgba(92, 118, 46, 0.4)',
             },
         },
     },

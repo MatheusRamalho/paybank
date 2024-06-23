@@ -7,7 +7,7 @@ import { SessionTitle } from "@/components/SessionTitle";
 export function HomeInvestiment() {
     return (
         <Section id="section-6" legend="">
-            <div className="flex-1 m-4 py-4 px-0">
+            <div className="flex-1 w-full m-4 py-4 px-0">
                 <SessionTitle label="investimentos" title="Mais dinheiro na sua" highlight="carteira" />
 
                 <div className="mb-8">
@@ -64,7 +64,7 @@ export function HomeInvestiment() {
 
                 <div className="border-t-2 border-t-white-darken mt-8">
                     <h6 className="text-gray-5 font-medium text-xl mt-8">na sua carteira terá</h6>
-                    <h2 className="font-header font-medium text-7xl uppercase leading-[140%] bg-gradient-g5 bg-clip-text text-transparent my-2">R$ <span className="result-investment">60845.54</span> </h2>
+                    <h2 className="font-header font-medium text-5xl uppercase leading-[140%] bg-gradient-g5 bg-clip-text text-transparent my-2">R$ <span className="result-investment">60845.54</span> </h2>
                     <h6 className="text-gray-5 font-medium text-xl">em 1 ano rendendo na PayBank</h6>
                 </div>
 

@@ -61,7 +61,7 @@ export function HomeSecurity() {
                 </div>
             </div>
 
-            <div className="relative flex-1 min-h-64">
+            <div className="relative flex-1 min-h-64 w-full">
                 <Image src={fig5} className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg" alt="" loading="lazy" />
                 <Image src={fig6} className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg" alt="" loading="lazy" />
                 <Image src={fig7} className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg" alt="" loading="lazy" />

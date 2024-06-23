@@ -1,5 +1,6 @@
 import { Section } from '@/components/Section'
 import { BackgroundHero } from '@/components/BackgroundHero'
+import { LinkButtonSpecial } from '@/components/LinkButtonSpecial'
 
 export function HomeJoin2() {
     return (
@@ -16,12 +17,12 @@ export function HomeJoin2() {
                             Tudo que você precisa em um só lugar
                         </h2>
 
-                        <p className="mt-6 text-center text-gray-7">
+                        <p className="mt-6 text-center text-gray-7 mb-8">
                             We plant a tree for everyone who pre-registers and
                             every new customer. And we're planning to plant millions.
                         </p>
 
-                        <a href="#" className="btn mt-8"> Junte-se a nós </a>
+                        <LinkButtonSpecial name="Junte-se a nós" url="#" />
                     </div>
                 </div>
             </Section>

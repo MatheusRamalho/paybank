@@ -9,8 +9,10 @@ import { ListItem } from "@/components/List/ListItem";
 import { ListRoot } from "@/components/List/ListRoot";
 import { Section } from "@/components/Section";
 import { SessionTitle } from "@/components/SessionTitle";
-import { LinkApple } from "@/components/LinkApple/LinkApple";
-import { LinkGooglePay } from "@/components/LinkGooglePay/LinkGooglePlay";
+import { IconCircle } from "@/components/IconCircle";
+import { IconApple } from "@/components/Icons/IconApple";
+import { IconGoogleplay } from "@/components/Icons/IconGoogleplay";
+import { LinkButton } from "@/components/LinkButton";
 
 import fig9 from '@/assets/svgs/fig9-paybank.svg'
 
@@ -21,8 +23,8 @@ export function HomeFuture() {
                 <SessionTitle label="o futuro" title="É a onda do" highlight="futuro" description="Lorem ipsum dolor sit amet consectetur. Et ut tempus facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. Sollicitudin at at volutpat scelerisque ut aliquet velit tempor." />
 
                 <div className="flex items-start gap-3 my-5">
-                    <LinkApple url="#" />
-                    <LinkGooglePay url="#" />
+                    <LinkButton variant="white" name="Google Play" url="#"> <IconGoogleplay /> </LinkButton>
+                    <LinkButton variant="white" name="Apple Play" url="#"> <IconApple /> </LinkButton>
                 </div>
 
                 <ListRoot>
@@ -43,17 +45,17 @@ export function HomeFuture() {
             <div className="flex-1 relative flex items-center justify-center px-5">
                 <Image src={fig9} alt="" />
 
-                <div className="bg-icon-white" id="icon1-fig9">
+                <IconCircle variant="secondary" className="absolute top-[30%] left-[20%] transition-all">
                     <IconSmartphone />
-                </div>
+                </IconCircle>
 
-                <div className="bg-icon-white" id="icon2-fig9">
+                <IconCircle variant="secondary" className="absolute top-[85%] right-[35%] transition-all">
                     <IconHeart />
-                </div>
+                </IconCircle>
 
-                <div className="bg-icon-white" id="icon3-fig9">
+                <IconCircle variant="secondary" className="absolute top-[5%] right-[20%] transition-all">
                     <IconCard />
-                </div>
+                </IconCircle>
             </div>
         </Section>
     )

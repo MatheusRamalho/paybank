@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* ANIMATION CREDIT CARD - INICIO */
 @keyframes card-transform-front {
     0% {
         transform: rotateX(-10deg) rotateY(-5deg) rotate(-30deg);
@@ -22,15 +20,6 @@
     100% {
         transform: rotateX(30deg) rotateY(5deg) rotate(45deg);
     }
-}
-
-
-.animate-card-transform-front {
-    animation: card-transform-front 3s ease-in-out infinite alternate;
-}
-
-.animate-card-transform-verse {
-    animation: card-transform-verse 3s ease-in-out infinite alternate;
 }
 
 @keyframes card-transform-front-2 {
@@ -53,6 +42,24 @@
     }
 }
 
+@keyframes rotate-icon-button {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.animate-card-transform-front {
+    animation: card-transform-front 3s ease-in-out infinite alternate;
+}
+
+.animate-card-transform-verse {
+    animation: card-transform-verse 3s ease-in-out infinite alternate;
+}
+
 .animate-card-transform-front2 {
     animation: card-transform-front-2 3s ease-in-out infinite alternate;
 }
@@ -61,13 +68,18 @@
     animation: card-transform-verse-2 3s ease-in-out infinite alternate;
 }
 
-/* ANIMATION CREDIT CARD - FIM */
-
 .transform-card-front-hero {
     transform: rotateX(-15deg) rotateY(-50deg) rotate(-30deg);
 }
 
-
 .transform-people-img {
     transform: skewX(-18deg) translate3d(12px, 12px, 0);
+}
+
+.animate-btn-icon-rotate {
+    animation: rotate-icon-button 12s ease infinite;
+}
+
+.transform-btn-icon {
+    transform: translate(-50%, -50%) translate3d(6px, 0, 0);
 }

@@ -13,7 +13,7 @@ export function Section({ id, legend, children, className }: SectionProps) {
         <section id={id} className={twMerge('container mx-auto py-32 px-6', className)}>
             <h6 hidden> {legend} </h6>
 
-            <div className="flex items-center justify-center gap-10"> {children} </div>
+            <div className="flex items-center justify-center gap-10 flex-col lg:flex-row"> {children} </div>
         </section>
     )
 }
