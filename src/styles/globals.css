@@ -66,3 +66,8 @@
 .transform-card-front-hero {
     transform: rotateX(-15deg) rotateY(-50deg) rotate(-30deg);
 }
+
+
+.transform-people-img {
+    transform: skewX(-18deg) translate3d(12px, 12px, 0);
+}
