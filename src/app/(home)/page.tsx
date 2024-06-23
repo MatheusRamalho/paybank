@@ -21,15 +21,12 @@ export default function Home() {
                 <HomeControl />
                 <HomeAllApp />
                 <HomeFuture />
-
-                {/* // OLHAR */}
-                {/* <HomeSecurity /> */}
-                {/* <HomeJoin /> */}
-
                 <HomePeople />
+                <HomeSecurity />
                 <HomeInvestiment />
                 <HomeCard />
                 <HomeJoin2 />
+                {/* <HomeJoin /> */}
             </main>
         </>
     )

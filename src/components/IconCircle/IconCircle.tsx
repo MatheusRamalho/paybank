@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 import { tv, VariantProps } from "tailwind-variants";
 
 const iconWrapper = tv({
@@ -25,13 +26,14 @@ const iconWrapper = tv({
 
 interface IconCircleProps extends VariantProps<typeof iconWrapper> {
     children: ReactNode
+    className?: string
 }
 
-export function IconCircle({ variant, children }: IconCircleProps) {
+export function IconCircle({ variant, children, className }: IconCircleProps) {
     const { base, icon } = iconWrapper({ variant })
 
     return (
-        <div className={base()}>
+        <div className={twMerge(base(), className)}>
             <div className={icon()}> {children} </div>
         </div>
     )
