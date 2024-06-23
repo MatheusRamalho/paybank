@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ANIMATION CREDIT CARD - INICIO */
+@keyframes card-transform-front {
+    0% {
+        transform: rotateX(-10deg) rotateY(-5deg) rotate(-30deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotateY(-30deg) rotate(-45deg);
+    }
+}
+
+@keyframes card-transform-verse {
+    0% {
+        transform: rotateX(-30deg) rotateY(5deg) rotate(45deg);
+    }
+
+    100% {
+        transform: rotateX(30deg) rotateY(5deg) rotate(45deg);
+    }
+}
+
+
+.animate-card-transform-front {
+    animation: card-transform-front 3s ease-in-out infinite alternate;
+}
+
+.animate-card-transform-verse {
+    animation: card-transform-verse 3s ease-in-out infinite alternate;
+}
+
+@keyframes card-transform-front-2 {
+    0% {
+        transform: rotateX(5deg) rotateY(10deg) rotate(-10deg) scale(0.8);
+    }
+
+    100% {
+        transform: rotateX(20deg) rotateY(-20deg) rotate(-10deg) scale(0.8);
+    }
+}
+
+@keyframes card-transform-verse-2 {
+    0% {
+        transform: rotateX(-15deg) rotateY(-30deg) rotate(10deg) scale(0.8);
+    }
+
+    100% {
+        transform: rotateX(15deg) rotateY(30deg) rotate(10deg) scale(0.8);
+    }
+}
+
+.animate-card-transform-front2 {
+    animation: card-transform-front-2 3s ease-in-out infinite alternate;
+}
+
+.animate-card-transform-verse2 {
+    animation: card-transform-verse-2 3s ease-in-out infinite alternate;
+}
+
+/* ANIMATION CREDIT CARD - FIM */
+
+.transform-card-front-hero {
+    transform: rotateX(-15deg) rotateY(-50deg) rotate(-30deg);
+}
