@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import { IconChart } from '@/components/icons/IconChart'
-import { IconInvestment } from '@/components/icons/IconInvestment'
+import { IconChart } from '@/components/icons/icon-chart'
+import { IconInvestment } from '@/components/icons/icon-investment'
 import { List } from '@/components/list'
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'

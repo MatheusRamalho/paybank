@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'
-import { IconInstagram } from '@/components/icons/IconInstagram'
+import { IconInstagram } from '@/components/icons/icon-instagram'
 import { LinkButton } from '@/components/link-button'
 import img1 from '@/assets/imgs/img1-paybank.png'
 import img2 from '@/assets/imgs/img2-paybank.png'

@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
-import { IconFingerprint } from '@/components/icons/IconFingerprint'
-import { IconShield } from '@/components/icons/IconShield'
-import { IconSmartphone } from '@/components/icons/IconSmartphone'
+import { IconFingerprint } from '@/components/icons/icon-fingerprint'
+import { IconShield } from '@/components/icons/icon-shield'
+import { IconSmartphone } from '@/components/icons/icon-smartphone'
 import { IconCircle } from '@/components/icon-circle'
 import { LinkButtonSpecial } from '@/components/link-button-special'
 import { BackgroundHero } from '@/components/background-hero'

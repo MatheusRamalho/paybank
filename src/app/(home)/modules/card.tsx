@@ -1,9 +1,9 @@
 
 import { CreditCardFront } from '@/components/credit-card-front'
 import { CreditCardVerse } from '@/components/credit-card-verse'
-import { IconCardVirtual } from '@/components/icons/IconCardVirtual'
-import { IconDownload } from '@/components/icons/IconDownload'
-import { IconVip } from '@/components/icons/IconVip'
+import { IconCardVirtual } from '@/components/icons/icon-card-virtual'
+import { IconDownload } from '@/components/icons/icon-download'
+import { IconVip } from '@/components/icons/icon-vip'
 import { List } from '@/components/list'
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'

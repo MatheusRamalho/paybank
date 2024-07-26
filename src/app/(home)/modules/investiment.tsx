@@ -1,6 +1,6 @@
 import { IconCircle } from '@/components/icon-circle'
-import { IconMinus } from '@/components/icons/IconMinus'
-import { IconPlus } from '@/components/icons/IconPlus'
+import { IconMinus } from '@/components/icons/icon-minus'
+import { IconPlus } from '@/components/icons/icon-plus'
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'
 

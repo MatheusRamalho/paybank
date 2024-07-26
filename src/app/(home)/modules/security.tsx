@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
-import { IconSmartphone } from '@/components/icons/IconSmartphone'
-import { IconFingerprint } from '@/components/icons/IconFingerprint'
-import { IconCard } from '@/components/icons/IconCard'
-import { IconShield } from '@/components/icons/IconShield'
+import { IconSmartphone } from '@/components/icons/icon-smartphone'
+import { IconFingerprint } from '@/components/icons/icon-fingerprint'
+import { IconCard } from '@/components/icons/icon-card'
+import { IconShield } from '@/components/icons/icon-shield'
 import { IconCircle } from '@/components/icon-circle'
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'

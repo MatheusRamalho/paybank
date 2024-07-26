@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from 'react'
 
-export function IconShieldcard(props: ComponentPropsWithoutRef<'svg'>) {
+export function IconShieldCard(props: ComponentPropsWithoutRef<'svg'>) {
     return (
         <svg
             width={24}

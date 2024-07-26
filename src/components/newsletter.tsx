@@ -1,4 +1,4 @@
-import { IconSend } from './icons/IconSend'
+import { IconSend } from './icons/icon-send'
 
 export function Newsletter() {
     return (
