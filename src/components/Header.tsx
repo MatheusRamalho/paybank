@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-import { LogoFull } from '../LogoFull'
+import { LogoFull } from './LogoFull'
 
-export function Navbar() {
+export function Header() {
     return (
         <header className="z-40 fixed top-0 w-full h-20 px-5 opacity-100 border-b border-b-rgba(255, 255, 255, 0.1) bg-[rgba(6, 8, 2, 0.5)] backdrop-blur-md">
             <nav className=" h-[inherit] container mx-auto flex items-center justify-between">

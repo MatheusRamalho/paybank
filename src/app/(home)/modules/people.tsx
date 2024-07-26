@@ -33,7 +33,7 @@ export function HomePeople() {
 
                         <LinkButton variant="white" name="Instagram" url="#"> <IconInstagram /> </LinkButton>
 
-                        <h4 className="mt-3">Por isso, nos siga no <br /> Instagram</h4>
+                        <h4 className="mt-3 text-2xl font-semibold">Por isso, nos siga no <br /> Instagram</h4>
                     </div>
 
                     <div className="flex-1">
