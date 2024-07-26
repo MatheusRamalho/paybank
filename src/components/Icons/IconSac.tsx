@@ -1,22 +1,19 @@
-import * as React from "react"
+import { ComponentPropsWithoutRef } from 'react'
 
-import { IconProps } from './IconType'
-
-export function IconSac({ className }: IconProps) {
-  return (
-    <svg
-      width={24}
-      height={24}
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-        className={className}
-
-    >
-      <path
-        d="M22 17.002a6.001 6.001 0 01-4.713 5.86l-.638-1.914A4.004 4.004 0 0019.465 19H17a2 2 0 01-2-2v-4a2 2 0 012-2h2.938a8 8 0 00-15.876 0H7a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10v5.002zM20 17v-4h-3v4h3zM4 13v4h3v-4H4z"
-        fill="#65744D"
-      />
-    </svg>
-  )
+export function IconSac(props: ComponentPropsWithoutRef<'svg'>) {
+    return (
+        <svg
+            width={24}
+            height={24}
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            {...props}
+        >
+            <path
+                d="M22 17.002a6.001 6.001 0 01-4.713 5.86l-.638-1.914A4.004 4.004 0 0019.465 19H17a2 2 0 01-2-2v-4a2 2 0 012-2h2.938a8 8 0 00-15.876 0H7a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10v5.002zM20 17v-4h-3v4h3zM4 13v4h3v-4H4z"
+                fill="#65744D"
+            />
+        </svg>
+    )
 }

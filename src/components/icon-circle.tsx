@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
-import { tv, VariantProps } from "tailwind-variants";
+import { ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
+import { tv, VariantProps } from 'tailwind-variants'
 
 const iconWrapper = tv({
     slots: {
         base: 'size-14 rounded-full flex items-center justify-center',
-        icon: 'size-6'
+        icon: 'size-6',
     },
     variants: {
         variant: {

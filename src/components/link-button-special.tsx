@@ -32,17 +32,22 @@ const links = tv({
 
 export interface LinkButtonSpecialProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
-    VariantProps<typeof links> {
+        VariantProps<typeof links> {
     url: string
     name: string
 }
 
-export function LinkButtonSpecial({ variant, className, url, name, ...props }: LinkButtonSpecialProps) {
+export function LinkButtonSpecial({
+    variant,
+    className,
+    url,
+    name,
+    ...props
+}: LinkButtonSpecialProps) {
     return (
-        <Link
-            className={links({ variant, className })}
-            href={url}
-            {...props}
-        > {name} </Link>
+        <Link className={links({ variant, className })} href={url} {...props}>
+            {' '}
+            {name}{' '}
+        </Link>
     )
 }

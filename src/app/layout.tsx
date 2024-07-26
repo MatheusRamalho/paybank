@@ -1,11 +1,12 @@
+/* eslint-disable camelcase */
 import type { Metadata } from 'next'
 import { M_PLUS_1, Red_Hat_Display } from 'next/font/google'
 
 import '@/styles/globals.css'
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
 
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const mPlus1 = M_PLUS_1({
     subsets: ['latin'],
     variable: '--m-plus-1-font',
@@ -22,8 +23,8 @@ export const metadata: Metadata = {
     authors: [
         {
             name: 'Matheus Ramalho',
-            url: 'https://www.matheusramalho.dev'
-        }
+            url: 'https://www.matheusramalho.dev',
+        },
     ],
     openGraph: {
         type: 'website',
@@ -31,9 +32,11 @@ export const metadata: Metadata = {
         title: 'Paybank | O banco pra chamar de seu.',
         description: 'Paybank | O banco pra chamar de seu.',
         siteName: 'Paybank',
-        images: [{
-            url: 'https://payban-mat.vercel.app/assets/imgs/metatag-paybank.png',
-        }],
+        images: [
+            {
+                url: 'https://payban-mat.vercel.app/assets/imgs/metatag-paybank.png',
+            },
+        ],
     },
     twitter: {
         card: 'summary_large_image',
@@ -41,11 +44,13 @@ export const metadata: Metadata = {
         creator: 'Matheus Ramalho',
         title: 'Paybank | O banco pra chamar de seu.',
         description: 'Paybank | O banco pra chamar de seu.',
-        'images': 'https://payban-mat.vercel.app/assets/imgs/metatag-paybank.png',
-    }
+        images: 'https://payban-mat.vercel.app/assets/imgs/metatag-paybank.png',
+    },
 }
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+    children,
+}: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="pt-BR">
             <body className={`${redHatDisplay.className} bg-white-dark`}>

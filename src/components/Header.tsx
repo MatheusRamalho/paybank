@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { LogoFull } from './LogoFull'
+import { LogoFull } from './logo-full'
 
 export function Header() {
     return (
@@ -11,15 +11,33 @@ export function Header() {
                 <div className="">
                     <ul className="flex flex-row items-center justify-end gap-6">
                         <li className="">
-                            <Link href="#" className="hidden md:block link-menu"> Features </Link>
+                            <Link
+                                href="#"
+                                className="hidden md:block link-menu"
+                            >
+                                {' '}
+                                Features{' '}
+                            </Link>
                         </li>
 
                         <li className="ml-3">
-                            <Link href="#" className="hidden md:block link-menu"> Nosso App </Link>
+                            <Link
+                                href="#"
+                                className="hidden md:block link-menu"
+                            >
+                                {' '}
+                                Nosso App{' '}
+                            </Link>
                         </li>
 
                         <li className="ml-3">
-                            <Link href="#" className="relative inline-block text-white py-3 px-7 text-center rounded-xl shadow-s1 text-base font-medium bg-gradient-g1"> Junte-se a nós </Link>
+                            <Link
+                                href="#"
+                                className="relative inline-block text-white py-3 px-7 text-center rounded-xl shadow-s1 text-base font-medium bg-gradient-g1"
+                            >
+                                {' '}
+                                Junte-se a nós{' '}
+                            </Link>
                         </li>
                     </ul>
                 </div>

@@ -1,6 +1,6 @@
-import * as React from "react"
+import { ComponentPropsWithoutRef } from 'react'
 
-export function Stamp() {
+export function Stamp(props: ComponentPropsWithoutRef<'svg'>) {
     return (
         <svg
             width={106}
@@ -8,9 +8,16 @@ export function Stamp() {
             viewBox="0 0 106 106"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            {...props}
         >
             <g filter="url(#filter0_b_331_1379)">
-                <circle cx={53} cy={53} r={53} fill="#E8EDDF" fillOpacity={0.05} />
+                <circle
+                    cx={53}
+                    cy={53}
+                    r={53}
+                    fill="#E8EDDF"
+                    fillOpacity={0.05}
+                />
                 <circle
                     cx={53}
                     cy={53}
@@ -44,7 +51,10 @@ export function Stamp() {
                     colorInterpolationFilters="sRGB"
                 >
                     <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation={8.65306} />
+                    <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation={8.65306}
+                    />
                     <feComposite
                         in2="SourceAlpha"
                         operator="in"
@@ -67,7 +77,10 @@ export function Stamp() {
                     colorInterpolationFilters="sRGB"
                 >
                     <feFlood floodOpacity={0} result="BackgroundImageFix" />
-                    <feGaussianBlur in="BackgroundImageFix" stdDeviation={8.65306} />
+                    <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation={8.65306}
+                    />
                     <feComposite
                         in2="SourceAlpha"
                         operator="in"
@@ -79,7 +92,7 @@ export function Stamp() {
                         result="shape"
                     />
                 </filter>
-                
+
                 <linearGradient
                     id="paint0_linear_331_1379"
                     x1={63.9479}

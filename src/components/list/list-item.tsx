@@ -15,8 +15,14 @@ export function ListItem({ title, description, children }: ListItemProps) {
             </div>
 
             <div className="flex-1 flex flex-col gap-1">
-                <h6 className="font-header font-bold text-base text-black-light"> {title} </h6>
-                <p className="font-body text-base font-light leading-7 text-gray-7"> {description} </p>
+                <h6 className="font-header font-bold text-base text-black-light">
+                    {' '}
+                    {title}{' '}
+                </h6>
+                <p className="font-body text-base font-light leading-7 text-gray-7">
+                    {' '}
+                    {description}{' '}
+                </p>
             </div>
         </li>
     )

@@ -1,13 +1,12 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import { Section } from "@/components/Section";
-import { SessionTitle } from "@/components/SessionTitle";
-import { IconInstagram } from "@/components/Icons/IconInstagram";
-
+import { Section } from '@/components/section'
+import { SessionTitle } from '@/components/session-title'
+import { IconInstagram } from '@/components/icons/IconInstagram'
+import { LinkButton } from '@/components/link-button'
 import img1 from '@/assets/imgs/img1-paybank.png'
 import img2 from '@/assets/imgs/img2-paybank.png'
 import img3 from '@/assets/imgs/img3-paybank.png'
-import { LinkButton } from "@/components/LinkButton";
 
 export function HomePeople() {
     return (
@@ -21,7 +20,12 @@ export function HomePeople() {
                     </div>
 
                     <div className="flex-1">
-                        <SessionTitle label="pessoas reais" title="Por trás disso tudo, tem um objetivo:" highlight="pessoas" description="Lorem ipsum dolor sit amet consectetur. Et ut tempus facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. Sollicitudin at at volutpat scelerisque ut aliquet velit tempor." />
+                        <SessionTitle
+                            label="pessoas reais"
+                            title="Por trás disso tudo, tem um objetivo:"
+                            highlight="pessoas"
+                            description="Lorem ipsum dolor sit amet consectetur. Et ut tempus facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. Sollicitudin at at volutpat scelerisque ut aliquet velit tempor."
+                        />
                     </div>
                 </div>
 
@@ -31,9 +35,14 @@ export function HomePeople() {
                             <Image src={img2} className="w-full" alt="" />
                         </div>
 
-                        <LinkButton variant="white" name="Instagram" url="#"> <IconInstagram /> </LinkButton>
+                        <LinkButton variant="white" name="Instagram" url="#">
+                            {' '}
+                            <IconInstagram />{' '}
+                        </LinkButton>
 
-                        <h4 className="mt-3 text-2xl font-semibold">Por isso, nos siga no <br /> Instagram</h4>
+                        <h4 className="mt-3 text-2xl font-semibold">
+                            Por isso, nos siga no <br /> Instagram
+                        </h4>
                     </div>
 
                     <div className="flex-1">

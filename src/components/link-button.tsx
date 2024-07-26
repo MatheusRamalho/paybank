@@ -13,19 +13,13 @@ const links = tv({
     ],
     variants: {
         variant: {
-            primary: [
-                'text-white bg-gradient-g1',
-                'hover:shadow-s1',
-            ],
+            primary: ['text-white bg-gradient-g1', 'hover:shadow-s1'],
             outline: [
                 'border-2 border-secondary-700 text-secondary-700',
                 'hover:bg-secondary-700 hover:text-primary-700 hover:shadow-s2',
                 'dark:border-secondary-700 dark:text-secondary-300 dark:hover:bg-secondary-700',
             ],
-            white: [
-                'text-black-light bg-white-light',
-                'hover:shadow-s2',
-            ],
+            white: ['text-black-light bg-white-light', 'hover:shadow-s2'],
         },
     },
     defaultVariants: {
@@ -35,18 +29,24 @@ const links = tv({
 
 export interface LinkButtonProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
-    VariantProps<typeof links> {
+        VariantProps<typeof links> {
     url: string
     name: string
     children?: ReactNode
 }
 
-export function LinkButton({ variant, className, name, url, children, ...props }: LinkButtonProps) {
+export function LinkButton({
+    variant,
+    className,
+    name,
+    url,
+    children,
+    ...props
+}: LinkButtonProps) {
     return (
-        <Link
-            className={links({ variant, className })}
-            href={url}
-            {...props}
-        > {children} {name} </Link>
+        <Link className={links({ variant, className })} href={url} {...props}>
+            {' '}
+            {children} {name}{' '}
+        </Link>
     )
 }

@@ -1,6 +1,6 @@
 import { tv, VariantProps } from 'tailwind-variants'
 
-import { Logo } from '../Logo'
+import { Logo } from './logo'
 
 const logoText = tv({
     base: ['font-header'],

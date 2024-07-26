@@ -1,4 +1,4 @@
-import { ScreenLoading } from '@/components/ScreenLoading'
+// import { ScreenLoading } from '@/components/ScreenLoading'
 
 import { HomeAllApp } from './modules/all-app'
 import { HomeCard } from './modules/card'
@@ -7,7 +7,7 @@ import { HomePeople } from './modules/people'
 import { HomeFuture } from './modules/future'
 import { HomeHero } from './modules/hero'
 import { HomeInvestiment } from './modules/investiment'
-import { HomeJoin } from './modules/join'
+// import { HomeJoin } from './modules/join'
 import { HomeJoin2 } from './modules/join2'
 import { HomeSecurity } from './modules/security'
 

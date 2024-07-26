@@ -1,6 +1,6 @@
-import * as React from "react"
+import { ComponentPropsWithoutRef } from 'react'
 
-export function LogoCard() {
+export function LogoCard(props: ComponentPropsWithoutRef<'svg'>) {
     return (
         <svg
             width={56}
@@ -8,6 +8,7 @@ export function LogoCard() {
             viewBox="0 0 56 56"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            {...props}
         >
             <rect
                 width={22.6486}

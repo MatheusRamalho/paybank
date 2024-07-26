@@ -1,12 +1,12 @@
-import { CreditCardFront } from '@/components/CreditCard/CreditCardFront'
-import { CreditCardVerse } from '@/components/CreditCard/CreditCardVerse'
-import { IconCardVirtual } from '@/components/Icons/IconCardVirtual'
-import { IconDownload } from '@/components/Icons/IconDownload'
-import { IconVip } from '@/components/Icons/IconVip'
-import { ListItem } from '@/components/List/ListItem'
-import { ListRoot } from '@/components/List/ListRoot'
-import { Section } from '@/components/Section'
-import { SessionTitle } from '@/components/SessionTitle'
+
+import { CreditCardFront } from '@/components/credit-card-front'
+import { CreditCardVerse } from '@/components/credit-card-verse'
+import { IconCardVirtual } from '@/components/icons/IconCardVirtual'
+import { IconDownload } from '@/components/icons/IconDownload'
+import { IconVip } from '@/components/icons/IconVip'
+import { List } from '@/components/list'
+import { Section } from '@/components/section'
+import { SessionTitle } from '@/components/session-title'
 
 export function HomeCard() {
     return (
@@ -19,21 +19,34 @@ export function HomeCard() {
             </div>
 
             <div className="flex-1 order-1 lg:order-2">
-                <SessionTitle label="um cartão pra chamar de seu" title="Minimalista. Simples. Eficiente." description="Revid Card features an RFID transponder in its core that enables you to pay with a touch-free wave" />
+                <SessionTitle
+                    label="um cartão pra chamar de seu"
+                    title="Minimalista. Simples. Eficiente."
+                    description="Revid Card features an RFID transponder in its core that enables you to pay with a touch-free wave"
+                />
 
-                <ListRoot>
-                    <ListItem title="Acesso a salas VIP" description="An obligation in which a third party agrees to repay a debt.">
+                <List.Root>
+                    <List.Item
+                        title="Acesso a salas VIP"
+                        description="An obligation in which a third party agrees to repay a debt."
+                    >
                         <IconVip />
-                    </ListItem>
+                    </List.Item>
 
-                    <ListItem title="Cartão virtual" description="An obligation in which a third party agrees to repay a debt.">
+                    <List.Item
+                        title="Cartão virtual"
+                        description="An obligation in which a third party agrees to repay a debt."
+                    >
                         <IconCardVirtual />
-                    </ListItem>
+                    </List.Item>
 
-                    <ListItem title="Create a deposit" description="An obligation in which a third party agrees to repay a debt.">
+                    <List.Item
+                        title="Create a deposit"
+                        description="An obligation in which a third party agrees to repay a debt."
+                    >
                         <IconDownload />
-                    </ListItem>
-                </ListRoot>
+                    </List.Item>
+                </List.Root>
             </div>
         </Section>
     )

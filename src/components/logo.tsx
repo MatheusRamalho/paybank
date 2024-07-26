@@ -1,6 +1,6 @@
-import * as React from "react"
+import { ComponentPropsWithoutRef } from 'react'
 
-export function Logo() {
+export function Logo(props: ComponentPropsWithoutRef<'svg'>) {
     return (
         <svg
             width={57}
@@ -8,6 +8,7 @@ export function Logo() {
             viewBox="0 0 57 37"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            {...props}
         >
             <rect
                 width={24.6308}
@@ -16,7 +17,7 @@ export function Logo() {
                 transform="matrix(1 0 -.42388 .90572 12.979 8.512)"
                 fill="#2F3329"
             />
-            
+
             <rect
                 width={39.8391}
                 height={26.6804}
