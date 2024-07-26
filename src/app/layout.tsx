@@ -56,7 +56,7 @@ export default function RootLayout({
             <body className={`${redHatDisplay.className} bg-white-dark`}>
                 <Header />
 
-                <div className="size-full mt-20"> {children} </div>
+                <div className="size-full"> {children} </div>
 
                 <Footer />
             </body>

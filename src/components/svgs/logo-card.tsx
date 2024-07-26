@@ -1,6 +1,6 @@
 import { ComponentPropsWithoutRef } from 'react'
 
-export function LogoCard(props: ComponentPropsWithoutRef<'svg'>) {
+export function LogoCardSvg(props: ComponentPropsWithoutRef<'svg'>) {
     return (
         <svg
             width={56}

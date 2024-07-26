@@ -5,7 +5,6 @@ import { IconInstagram } from './icons/icon-instagram'
 import { IconTwitter } from './icons/icon-twitter'
 import { IconYoutube } from './icons/icon-youtube'
 import { LogoFull } from './logo-full'
-import { IconNy } from './icons/icon-ny'
 import { Newsletter } from './newsletter'
 import { SocialMedia } from './social-media'
 import { LinkButton } from './link-button'
@@ -63,19 +62,22 @@ export function Footer() {
 
                 <div className="flex items-center justify-between flex-col md:flex-row mt-10 lg:mt-0">
                     <div className="w-[calc(100% - 32px)] m-4 px-0 float-none md:w-[calc(100% - 32PX)] md:float-left py-0">
-                        <p className="text-center">© 2022 PayBank.com</p>
+                        <p className="text-center text-sm text-gray-6">
+                            © 2024 PayBank
+                        </p>
                     </div>
 
                     <div className="w-[calc(100% - 32px)] m-4 px-0 float-none md:w-[calc(100% - 32PX)] md:float-left py-0 flex items-center justify-center">
-                        <p className="text-center">Powered by Násser Yousef:</p>
-
-                        <Link
-                            href="http://nasseryousef.com.br/"
-                            className="ml-2"
-                            target="_blank"
-                        >
-                            <IconNy />
-                        </Link>
+                        <p className="text-center text-sm text-gray-6">
+                            Powered by
+                            <Link
+                                href="http://matheusramalho.dev"
+                                className="ml-2 underline"
+                                target="_blank"
+                            >
+                                Matheus Ramalho
+                            </Link>
+                        </p>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ import fig5 from '@/assets/imgs/fig5-paybank.png'
 import fig6 from '@/assets/imgs/fig6-paybank.png'
 import fig7 from '@/assets/imgs/fig7-paybank.png'
 import fig8 from '@/assets/imgs/fig8-paybank.png'
-import patterImg from '@/assets/svgs/pattern.svg'
+import { PatterSvg } from '@/components/svgs/pattern'
 
 export function HomeSecurity() {
     return (
@@ -131,12 +131,7 @@ export function HomeSecurity() {
                     alt=""
                     loading="lazy"
                 />
-                <Image
-                    src={patterImg}
-                    className="-z-[1] absolute -top-[40%] left-1/2 -translate-x-2/4 translate-y-[0%]"
-                    alt=""
-                    loading="lazy"
-                />
+                <PatterSvg className="-z-[1] absolute -top-[40%] left-1/2 -translate-x-2/4 translate-y-[0%]" />
             </div>
         </Section>
     )

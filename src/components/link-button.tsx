@@ -4,7 +4,7 @@ import { tv, VariantProps } from 'tailwind-variants'
 
 const links = tv({
     base: [
-        'w-fit px-7 py-4 rounded-xl outline-none shadow-sm',
+        'w-fit px-7 py-4 rounded-lg outline-none shadow-sm',
         'font-medium text-base text-center',
         'flex flex-row items-center justify-start gap-2',
         'transition-[0.5s] duration-[ease]',

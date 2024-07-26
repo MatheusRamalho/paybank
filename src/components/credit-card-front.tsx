@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge'
 
-import { LogoCard } from './logo-card'
+import { LogoCardSvg } from './svgs/logo-card'
 
 interface CreditCardFrontProps {
     className?: string
@@ -18,7 +18,7 @@ export function CreditCardFront({ className }: CreditCardFrontProps) {
             }}
         >
             <div className="absolute top-3 left-3">
-                <LogoCard />
+                <LogoCardSvg />
             </div>
 
             <div className="absolute bottom-6 left-4">

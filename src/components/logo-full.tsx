@@ -1,6 +1,6 @@
 import { tv, VariantProps } from 'tailwind-variants'
 
-import { Logo } from './logo'
+import { LogoSvg } from './svgs/logo'
 
 const logoText = tv({
     base: ['font-header'],
@@ -20,7 +20,7 @@ interface LogoFullProps extends VariantProps<typeof logoText> {}
 export function LogoFull({ variant }: LogoFullProps) {
     return (
         <div className="w-fit flex items-center justify-center gap-2">
-            <Logo />
+            <LogoSvg />
             <h6 className={logoText({ variant })}> Paybank. </h6>
         </div>
     )
