@@ -1,4 +1,8 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { twMerge } from 'tailwind-merge'
 
 import { IconSmartphone } from '@/components/icons/icon-smartphone'
 import { IconFingerprint } from '@/components/icons/icon-fingerprint'
@@ -15,6 +19,24 @@ import fig7 from '@/assets/imgs/fig7-paybank.png'
 import fig8 from '@/assets/imgs/fig8-paybank.png'
 
 export function HomeSecurity() {
+    const [currentTab, setCurrentTab] = useState<string>('tab1')
+
+    function handleChangeTab({ value }: { value: string }) {
+        setCurrentTab(value)
+    }
+
+    useEffect(() => {
+        const tabOrder = ['tab1', 'tab2', 'tab3', 'tab4']
+        let currentIndex = 0
+
+        const intervalId = setInterval(() => {
+            currentIndex = (currentIndex + 1) % tabOrder.length
+            setCurrentTab(tabOrder[currentIndex])
+        }, 1000)
+
+        return () => clearInterval(intervalId)
+    }, [])
+
     return (
         <Section id="section-5" legend="">
             <div className="flex-1">
@@ -26,39 +48,76 @@ export function HomeSecurity() {
                 />
 
                 <div className="mt-6 pb-8 border-b-2 border-b-white-darken overflow-hidden flex flex-row items-center justify-start gap-2">
-                    <IconCircle
-                        variant="secondary"
-                        className="icon-click hover:cursor-pointer"
+                    <button
+                        type="button"
+                        onClick={() => handleChangeTab({ value: 'tab1' })}
                     >
-                        <IconSmartphone />
-                    </IconCircle>
+                        <IconCircle
+                            variant="secondary"
+                            className={twMerge(
+                                'icon-click group hover:cursor-pointer hover:bg-secondary-700',
+                                currentTab === 'tab1' && 'bg-secondary-700',
+                            )}
+                        >
+                            <IconSmartphone />
+                        </IconCircle>
+                    </button>
 
-                    <IconCircle
-                        variant="secondary"
-                        className="icon-click hover:cursor-pointer"
+                    <button
+                        type="button"
+                        onClick={() => handleChangeTab({ value: 'tab2' })}
                     >
-                        <IconFingerprint />
-                    </IconCircle>
+                        <IconCircle
+                            variant="secondary"
+                            className={twMerge(
+                                'icon-click group hover:cursor-pointer hover:bg-secondary-700',
+                                currentTab === 'tab2' && 'bg-secondary-700',
+                            )}
+                        >
+                            <IconFingerprint />
+                        </IconCircle>
+                    </button>
 
-                    <IconCircle
-                        variant="secondary"
-                        className="icon-click hover:cursor-pointer"
+                    <button
+                        type="button"
+                        onClick={() => handleChangeTab({ value: 'tab3' })}
                     >
-                        <IconCard />
-                    </IconCircle>
+                        <IconCircle
+                            variant="secondary"
+                            className={twMerge(
+                                'icon-click group hover:cursor-pointer hover:bg-secondary-700',
+                                currentTab === 'tab3' && 'bg-secondary-700',
+                            )}
+                        >
+                            <IconCard />
+                        </IconCircle>
+                    </button>
 
-                    <IconCircle
-                        variant="secondary"
-                        className="icon-click hover:cursor-pointer"
+                    <button
+                        type="button"
+                        onClick={() => handleChangeTab({ value: 'tab4' })}
                     >
-                        <IconShield />
-                    </IconCircle>
+                        <IconCircle
+                            variant="secondary"
+                            className={twMerge(
+                                'icon-click group hover:cursor-pointer hover:bg-secondary-700',
+                                currentTab === 'tab4' && 'bg-secondary-700',
+                            )}
+                        >
+                            <IconShield />
+                        </IconCircle>
+                    </button>
                 </div>
 
                 <div className="mt-3 relative min-h-44">
-                    <div className="text-click absolute top-0 left-0 transition duration-500">
+                    <div
+                        className={twMerge(
+                            'absolute top-0 left-0 transition duration-500',
+                            currentTab === 'tab1' ? 'block' : 'hidden',
+                        )}
+                    >
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            Controle do cartão pelo App{' '}
+                            Controle do cartão pelo App
                         </h4>
 
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
@@ -67,9 +126,14 @@ export function HomeSecurity() {
                         </p>
                     </div>
 
-                    <div className="text-click absolute top-0 left-0 transition duration-500">
+                    <div
+                        className={twMerge(
+                            'absolute top-0 left-0 transition duration-500',
+                            currentTab === 'tab2' ? 'block' : 'hidden',
+                        )}
+                    >
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            Acesso protegido{' '}
+                            Acesso protegido
                         </h4>
 
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
@@ -79,9 +143,14 @@ export function HomeSecurity() {
                         </p>
                     </div>
 
-                    <div className="text-click absolute top-0 left-0 transition duration-500">
+                    <div
+                        className={twMerge(
+                            'absolute top-0 left-0 transition duration-500',
+                            currentTab === 'tab3' ? 'block' : 'hidden',
+                        )}
+                    >
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            Suporte{' '}
+                            Suporte
                         </h4>
 
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
@@ -90,9 +159,14 @@ export function HomeSecurity() {
                         </p>
                     </div>
 
-                    <div className="text-click absolute top-0 left-0 transition duration-500">
+                    <div
+                        className={twMerge(
+                            'absolute top-0 left-0 transition duration-500',
+                            currentTab === 'tab4' ? 'block' : 'hidden',
+                        )}
+                    >
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            Transações seguras{' '}
+                            Transações seguras
                         </h4>
 
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
@@ -106,28 +180,40 @@ export function HomeSecurity() {
             <div className="relative flex-1 min-h-64 w-full">
                 <Image
                     src={fig5}
-                    className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
+                    className={twMerge(
+                        'absolute top-0 left-0 transition duration-700 rounded-lg',
+                        currentTab === 'tab1' ? 'block' : 'hidden',
+                    )}
                     alt=""
                     loading="lazy"
                 />
 
                 <Image
                     src={fig6}
-                    className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
+                    className={twMerge(
+                        'absolute top-0 left-0 transition duration-700 rounded-lg',
+                        currentTab === 'tab2' ? 'block' : 'hidden',
+                    )}
                     alt=""
                     loading="lazy"
                 />
 
                 <Image
                     src={fig7}
-                    className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
+                    className={twMerge(
+                        'absolute top-0 left-0 transition duration-700 rounded-lg',
+                        currentTab === 'tab3' ? 'block' : 'hidden',
+                    )}
                     alt=""
                     loading="lazy"
                 />
 
                 <Image
                     src={fig8}
-                    className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
+                    className={twMerge(
+                        'absolute top-0 left-0 transition duration-700 rounded-lg',
+                        currentTab === 'tab4' ? 'block' : 'hidden',
+                    )}
                     alt=""
                     loading="lazy"
                 />
