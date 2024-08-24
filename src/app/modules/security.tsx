@@ -7,11 +7,12 @@ import { IconShield } from '@/components/icons/icon-shield'
 import { IconCircle } from '@/components/icon-circle'
 import { Section } from '@/components/section'
 import { SessionTitle } from '@/components/session-title'
+import { PatterSvg } from '@/components/svgs/pattern'
+
 import fig5 from '@/assets/imgs/fig5-paybank.png'
 import fig6 from '@/assets/imgs/fig6-paybank.png'
 import fig7 from '@/assets/imgs/fig7-paybank.png'
 import fig8 from '@/assets/imgs/fig8-paybank.png'
-import { PatterSvg } from '@/components/svgs/pattern'
 
 export function HomeSecurity() {
     return (
@@ -57,11 +58,10 @@ export function HomeSecurity() {
                 <div className="mt-3 relative min-h-44">
                     <div className="text-click absolute top-0 left-0 transition duration-500">
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            {' '}
                             Controle do cartão pelo App{' '}
                         </h4>
+
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
-                            {' '}
                             Perdeu o cartão ou suspeita de roubo? Bloqueie e
                             desbloqueie o cartão pelo aplicativo em segundos.
                         </p>
@@ -69,11 +69,10 @@ export function HomeSecurity() {
 
                     <div className="text-click absolute top-0 left-0 transition duration-500">
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            {' '}
                             Acesso protegido{' '}
                         </h4>
+
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
-                            {' '}
                             Uma camada extra de segurança para acessar o
                             aplicativo com reconhecimento facial, impressão
                             digital ou senha.
@@ -82,11 +81,10 @@ export function HomeSecurity() {
 
                     <div className="text-click absolute top-0 left-0 transition duration-500">
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            {' '}
                             Suporte{' '}
                         </h4>
+
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
-                            {' '}
                             Digite sua senha para confirmar transações e reporte
                             qualquer movimentação não autorizada por você.
                         </p>
@@ -94,11 +92,10 @@ export function HomeSecurity() {
 
                     <div className="text-click absolute top-0 left-0 transition duration-500">
                         <h4 className="font-header font-normal text-3xl leading-[120%] text-black-light">
-                            {' '}
                             Transações seguras{' '}
                         </h4>
+
                         <p className="mt-4 font-body text-base font-light leading-6 text-gray-7">
-                            {' '}
                             Digite sua senha para confirmar transações e reporte
                             qualquer movimentação não autorizada por você.
                         </p>
@@ -113,24 +110,28 @@ export function HomeSecurity() {
                     alt=""
                     loading="lazy"
                 />
+
                 <Image
                     src={fig6}
                     className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
                     alt=""
                     loading="lazy"
                 />
+
                 <Image
                     src={fig7}
                     className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
                     alt=""
                     loading="lazy"
                 />
+
                 <Image
                     src={fig8}
                     className="img-paybank absolute top-0 left-0 transition duration-700 rounded-lg"
                     alt=""
                     loading="lazy"
                 />
+
                 <PatterSvg className="-z-[1] absolute -top-[40%] left-1/2 -translate-x-2/4 translate-y-[0%]" />
             </div>
         </Section>

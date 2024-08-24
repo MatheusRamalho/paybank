@@ -100,15 +100,11 @@ export function HomeInvestment() {
 
                     <div className="flex items-center justify-between">
                         <h5 className="mt-2 font-bold font-header text-2xl">
-                            R${' '}
-                            <span className="money-investment">
-                                {valueToInvest}
-                            </span>{' '}
+                            R$ {valueToInvest}
                         </h5>
 
                         <div className="flex items-center justify-center gap-3">
                             <button
-                                className="button-minus-money"
                                 type="button"
                                 onClick={handleDecreaseValueToInvest}
                             >
@@ -121,7 +117,6 @@ export function HomeInvestment() {
                             </button>
 
                             <button
-                                className="button-plus-money"
                                 type="button"
                                 onClick={handleIncreaseValueToInvest}
                             >
@@ -143,16 +138,11 @@ export function HomeInvestment() {
 
                     <div className="flex items-center justify-between">
                         <h5 className="mt-2 font-bold font-header text-2xl">
-                            <span className="time-investment">{months}</span>{' '}
-                            meses
+                            {months} meses
                         </h5>
 
                         <div className="flex items-center justify-center gap-3">
-                            <button
-                                className="button-minus-time"
-                                type="button"
-                                onClick={handleDecreaseMonth}
-                            >
+                            <button type="button" onClick={handleDecreaseMonth}>
                                 <IconCircle
                                     variant="primary"
                                     className="hover:cursor-pointer hover:bg-secondary-700"
@@ -161,11 +151,7 @@ export function HomeInvestment() {
                                 </IconCircle>
                             </button>
 
-                            <button
-                                className="button-plus-time"
-                                type="button"
-                                onClick={handleIncreaseMonth}
-                            >
+                            <button type="button" onClick={handleIncreaseMonth}>
                                 <IconCircle
                                     variant="primary"
                                     className="hover:cursor-pointer hover:bg-secondary-700"
@@ -194,9 +180,7 @@ export function HomeInvestment() {
                     </h6>
 
                     <h2 className="font-header font-medium text-7xl uppercase leading-[140%] bg-gradient-g5 bg-clip-text text-transparent my-2">
-                        <span className="result-investment">
-                            {yieldingValue}
-                        </span>{' '}
+                        {yieldingValue}
                     </h2>
 
                     <h6 className="text-gray-5 font-medium text-xl">
