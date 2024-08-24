@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 import { LogoFull } from './LogoFull'
-import { Newsletter } from './Newsletter'
 import { SocialMedia } from './SocialMedia'
 import { LinkButton } from './LinkButton'
 import { IconFacebook } from './IconFacebook'
@@ -10,6 +9,7 @@ import { IconTwitter } from './IconTwitter'
 import { IconYoutube } from './IconYoutube'
 import { IconGoogleplay } from './IconGoogleplay'
 import { IconApple } from './IconApple'
+import { Newsletter } from './Newsletter'
 
 export function Footer() {
     return (
