@@ -14,11 +14,10 @@ export function ScreenLoading() {
                 <div className="absolute top-0 left-[18%] w-14 h-9 rounded-md bg-gradient-g3 skew-x-[-20deg]" />
             </div>
 
-            {/* TODO: animation: bar-loader 4s ease forwards; */}
             <div
                 className={twMerge(
-                    'relative w-32 h-[0.063rem] bg-white/10 mt-2',
-                    'after:content-[""] after:absolute after:top-0 after:left-0 after:w-1/2 after:h-full after:bg-primary-300',
+                    'relative w-32 h-[2px] bg-white/10 mt-2',
+                    'after:content-[""] after:absolute after:top-0 after:left-0 after:animate-bar-loader after:h-full after:bg-primary-300',
                 )}
             />
 

@@ -149,6 +149,10 @@ const config: Config = {
                     '0%, 75%': { opacity: '0' },
                     '80%, 100%': { opacity: '1' },
                 },
+                'bar-loader': {
+                    '0%': { width: '0%' },
+                    '100%': { width: '100%' },
+                },
             },
             animation: {
                 'card-transform-front':
@@ -165,6 +169,7 @@ const config: Config = {
                 'frame-iphone-3': 'frame-iphone-3 24s ease infinite',
                 'frame-iphone-4': 'frame-iphone-4 24s ease infinite',
                 'frame-iphone-5': 'frame-iphone-5 24s ease infinite',
+                'bar-loader': 'bar-loader 5s ease forwards',
             },
         },
     },
