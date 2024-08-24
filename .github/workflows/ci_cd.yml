@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Clear npm cache
+        run: npm cache clean --force
+      
       # - name: Cache node
       #   uses: actions/cache@v4
       #   id: npm-cache
