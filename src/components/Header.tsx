@@ -55,7 +55,7 @@ export function Header() {
             <nav className=" h-[inherit] container mx-auto flex items-center justify-between">
                 <LogoFull variant={active ? 'dark' : 'light'} />
 
-                <div className="">
+                <div className="hidden sm:block">
                     <ul className="flex flex-row items-center justify-end gap-6">
                         <li className="">
                             <Link

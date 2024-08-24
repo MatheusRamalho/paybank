@@ -177,48 +177,50 @@ export function HomeSecurity() {
                 </div>
             </div>
 
-            <div className="relative flex-1 min-h-64 w-full">
-                <Image
-                    src={fig5}
-                    className={twMerge(
-                        'absolute top-0 left-0 transition duration-700 rounded-lg',
-                        currentTab === 'tab1' ? 'block' : 'hidden',
-                    )}
-                    alt=""
-                    loading="lazy"
-                />
+            <div className="relative flex-1">
+                <div className="h-72 w-full overflow-hidden rounded-lg">
+                    <Image
+                        src={fig5}
+                        className={twMerge(
+                            'transition duration-700 rounded-lg object-cover',
+                            currentTab === 'tab1' ? 'block' : 'hidden',
+                        )}
+                        alt=""
+                        loading="lazy"
+                    />
 
-                <Image
-                    src={fig6}
-                    className={twMerge(
-                        'absolute top-0 left-0 transition duration-700 rounded-lg',
-                        currentTab === 'tab2' ? 'block' : 'hidden',
-                    )}
-                    alt=""
-                    loading="lazy"
-                />
+                    <Image
+                        src={fig6}
+                        className={twMerge(
+                            'transition duration-700 rounded-lg object-cover',
+                            currentTab === 'tab2' ? 'block' : 'hidden',
+                        )}
+                        alt=""
+                        loading="lazy"
+                    />
 
-                <Image
-                    src={fig7}
-                    className={twMerge(
-                        'absolute top-0 left-0 transition duration-700 rounded-lg',
-                        currentTab === 'tab3' ? 'block' : 'hidden',
-                    )}
-                    alt=""
-                    loading="lazy"
-                />
+                    <Image
+                        src={fig7}
+                        className={twMerge(
+                            'transition duration-700 rounded-lg object-cover',
+                            currentTab === 'tab3' ? 'block' : 'hidden',
+                        )}
+                        alt=""
+                        loading="lazy"
+                    />
 
-                <Image
-                    src={fig8}
-                    className={twMerge(
-                        'absolute top-0 left-0 transition duration-700 rounded-lg',
-                        currentTab === 'tab4' ? 'block' : 'hidden',
-                    )}
-                    alt=""
-                    loading="lazy"
-                />
+                    <Image
+                        src={fig8}
+                        className={twMerge(
+                            'transition duration-700 rounded-lg object-cover',
+                            currentTab === 'tab4' ? 'block' : 'hidden',
+                        )}
+                        alt=""
+                        loading="lazy"
+                    />
+                </div>
 
-                <PatterSvg className="-z-[1] absolute -top-[40%] left-1/2 -translate-x-2/4 translate-y-[0%]" />
+                <PatterSvg className="hidden sm:block -z-[1] absolute -top-[40%] left-1/2 -translate-x-2/4 translate-y-[0%]" />
             </div>
         </Section>
     )

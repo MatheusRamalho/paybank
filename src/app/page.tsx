@@ -41,7 +41,6 @@ export default function Home() {
             {/* <ScreenLoading /> */}
 
             <main className="w-full h-full">
-                {/* HERO */}
                 <div className="bg-black-dark relative overflow-hidden py-12">
                     <BackgroundHero />
 
@@ -86,9 +85,9 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex-1 flex items-center justify-center">
+                            <div className="hidden sm:flex flex-1 items-center justify-center">
                                 <div className="relative size-96 lg:w-full lg:h-96">
-                                    <CreditCardVerse className="absolute top-1/4 right-[15%] -skew-x-12 skew-y-12 rotate-45 animate-card-transform-verse" />
+                                    <CreditCardVerse className=" absolute top-1/4 right-[15%] -skew-x-12 skew-y-12 rotate-45 animate-card-transform-verse" />
                                     <CreditCardFront className="absolute top-[15%] left-[10%] animate-card-transform-front" />
                                 </div>
                             </div>
@@ -96,7 +95,6 @@ export default function Home() {
                     </section>
                 </div>
 
-                {/* CONTROL */}
                 <Section id="section-1" legend="">
                     <div className="flex-1 w-full h-auto">
                         <SessionTitle
@@ -105,7 +103,7 @@ export default function Home() {
                             description="Veja como você pode cuidar das suas finanças pelo app Paybank de forma segura, rápida e o melhor, no corforto da sua casa."
                         />
 
-                        <div className="relative size-96 -mt-8">
+                        <div className="hidden sm:block relative size-96 -mt-8">
                             <CreditCardVerse className="absolute top-[10%] right-[5%] skew-x-[20deg] -skew-y-[20deg] animate-card-transform-verse2" />
                             <CreditCardFront className="absolute top-[3%] left-[4%] skew-x-[20deg] -skew-y-[20deg] animate-card-transform-front2" />
                         </div>
@@ -159,7 +157,6 @@ export default function Home() {
                     </div>
                 </Section>
 
-                {/* ALL APP */}
                 <Section id="section-2" legend="">
                     <div className="flex-1">
                         <SessionTitle
@@ -191,7 +188,6 @@ export default function Home() {
                     </div>
                 </Section>
 
-                {/* FUTURE */}
                 <Section id="section-3" legend="">
                     <div className="flex-1">
                         <SessionTitle
@@ -270,7 +266,6 @@ export default function Home() {
                     </div>
                 </Section>
 
-                {/* PEOPLE */}
                 <Section id="section-4" legend="">
                     <div className="">
                         <div className="flex gap-10 flex-col lg:flex-row">
@@ -331,16 +326,13 @@ export default function Home() {
                     </div>
                 </Section>
 
-                {/* SECURITY */}
                 <HomeSecurity />
 
-                {/* INVESTIMENT */}
                 <HomeInvestment />
 
-                {/* CARD */}
                 <Section id="section-7" legend="">
                     <div className="flex-1 flex items-center order-2 lg:order-2 mt-20 lg:mt-0">
-                        <div className="size-96 lg:w-[450px] lg:h-96 relative">
+                        <div className="hidden sm:block size-96 lg:w-[450px] lg:h-96 relative">
                             <CreditCardVerse className="absolute top-[5%] right-[10%] -skew-x-12 skew-y-12" />
                             <CreditCardFront className="absolute top-[-5%] left-[10%] skew-x-12 -skew-y-12" />
                         </div>
@@ -378,13 +370,12 @@ export default function Home() {
                     </div>
                 </Section>
 
-                {/* JOIN */}
                 <div className="bg-black-light relative overflow-hidden">
                     <BackgroundHero />
 
                     <Section id="section-8" legend="">
                         <div className="m-0 lg:my-36 lg:mx-0">
-                            <div className="w-2/3 mx-auto m-4 py-4 px-0 flex items-center justify-center flex-col">
+                            <div className="w-full sm:w-2/3 mx-auto m-4 py-4 px-0 flex items-center justify-center flex-col">
                                 <h6 className="font-header font-bold text-2xl uppercase leading-[140%] text-center inline-block bg-gradient-g5 bg-clip-text text-transparent">
                                     paybank
                                 </h6>
