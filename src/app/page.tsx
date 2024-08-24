@@ -32,7 +32,7 @@ import img1 from '@/assets/imgs/img1-paybank.png'
 import img2 from '@/assets/imgs/img2-paybank.png'
 import img3 from '@/assets/imgs/img3-paybank.png'
 
-import { HomeInvestiment } from './modules/investiment'
+import { HomeInvestment } from './modules/investiment'
 import { HomeSecurity } from './modules/security'
 
 export default function Home() {
@@ -335,7 +335,7 @@ export default function Home() {
                 <HomeSecurity />
 
                 {/* INVESTIMENT */}
-                <HomeInvestiment />
+                <HomeInvestment />
 
                 {/* CARD */}
                 <Section id="section-7" legend="">
