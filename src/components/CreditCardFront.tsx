@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge'
 
-import { LogoCardSvg } from './LogoCardSvg'
+import { LogoCardSvg } from '@/components/LogoCardSvg'
 
 interface CreditCardFrontProps {
     className?: string

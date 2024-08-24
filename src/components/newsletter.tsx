@@ -1,4 +1,4 @@
-import { IconSend } from './IconSend'
+import { IconSend } from '@/components/IconSend'
 
 export function Newsletter() {
     return (

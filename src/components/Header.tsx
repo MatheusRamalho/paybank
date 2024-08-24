@@ -4,7 +4,7 @@ import { useRef, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { twMerge } from 'tailwind-merge'
 
-import { LogoFull } from './LogoFull'
+import { LogoFull } from '@/components/LogoFull'
 
 export function Header() {
     const headerRef = useRef<HTMLElement>(null)

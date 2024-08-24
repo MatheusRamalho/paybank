@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
-import { LogoFull } from './LogoFull'
-import { SocialMedia } from './SocialMedia'
-import { LinkButton } from './LinkButton'
-import { IconFacebook } from './IconFacebook'
-import { IconInstagram } from './IconInstagram'
-import { IconTwitter } from './IconTwitter'
-import { IconYoutube } from './IconYoutube'
-import { IconGoogleplay } from './IconGoogleplay'
-import { IconApple } from './IconApple'
-import { Newsletter } from './Newsletter'
+import { LogoFull } from '@/components/LogoFull'
+import { SocialMedia } from '@/components/SocialMedia'
+import { LinkButton } from '@/components/LinkButton'
+import { IconFacebook } from '@/components/IconFacebook'
+import { IconInstagram } from '@/components/IconInstagram'
+import { IconTwitter } from '@/components/IconTwitter'
+import { IconYoutube } from '@/components/IconYoutube'
+import { IconGoogleplay } from '@/components/IconGoogleplay'
+import { IconApple } from '@/components/IconApple'
+import { Newsletter } from '@/components/Newsletter'
 
 export function Footer() {
     return (
