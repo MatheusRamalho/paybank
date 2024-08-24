@@ -1,5 +1,5 @@
-import { ListItem } from './list-item'
-import { ListRoot } from './list-root'
+import { ListItem } from './ListItem'
+import { ListRoot } from './ListRoot'
 
 export const List = {
     Root: ListRoot,

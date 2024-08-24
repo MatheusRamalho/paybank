@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { M_PLUS_1, Red_Hat_Display } from 'next/font/google'
 
 import '@/styles/globals.css'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const mPlus1 = M_PLUS_1({
