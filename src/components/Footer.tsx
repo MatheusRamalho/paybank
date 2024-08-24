@@ -1,15 +1,15 @@
 import Link from 'next/link'
 
-import { IconFacebook } from './icons/icon-facebook'
-import { IconInstagram } from './icons/icon-instagram'
-import { IconTwitter } from './icons/icon-twitter'
-import { IconYoutube } from './icons/icon-youtube'
 import { LogoFull } from './LogoFull'
 import { Newsletter } from './Newsletter'
 import { SocialMedia } from './SocialMedia'
 import { LinkButton } from './LinkButton'
-import { IconGoogleplay } from './icons/icon-googleplay'
-import { IconApple } from './icons/icon-apple'
+import { IconFacebook } from './IconFacebook'
+import { IconInstagram } from './IconInstagram'
+import { IconTwitter } from './IconTwitter'
+import { IconYoutube } from './IconYoutube'
+import { IconGoogleplay } from './IconGoogleplay'
+import { IconApple } from './IconApple'
 
 export function Footer() {
     return (
