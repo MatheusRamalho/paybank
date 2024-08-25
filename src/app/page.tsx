@@ -34,7 +34,6 @@ import { IconSmartphone } from '@/components/IconSmartphone'
 import { IconGoogleplay } from '@/components/IconGoogleplay'
 import { IconFingerprint } from '@/components/IconFingerprint'
 import { IconCardVirtual } from '@/components/IconCardVirtual'
-import { ListItem, ListRoot } from '@/components/List'
 
 import fig4 from '@/assets/imgs/fig4-paybank.png'
 import fig10 from '@/assets/imgs/fig10-paybank.png'
@@ -285,21 +284,39 @@ export default function Home() {
                             description="Lorem ipsum dolor sit amet consectetur. Et ut tempus facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. Sollicitudin at at volutpat scelerisque ut aliquet velit tempor."
                         />
 
-                        <ListRoot>
-                            <ListItem
-                                title="Controle total sobre seus gastos"
-                                description="Tudo na palma da sua mão"
-                            >
-                                <IconChart />
-                            </ListItem>
+                        <ul className="flex flex-col gap-8 py-2 w-fit">
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconChart />
+                                </div>
 
-                            <ListItem
-                                title="Acesso a uma carteira de investimentos"
-                                description="Tudo na palma da sua mão"
-                            >
-                                <IconInvestment />
-                            </ListItem>
-                        </ListRoot>
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Controle total sobre seus gastos
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        Tudo na palma da sua mão
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconInvestment />
+                                </div>
+
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Acesso a uma carteira de investimentos
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        Tudo na palma da sua mão
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div className="flex-1 flex items-center justify-center">
@@ -337,28 +354,58 @@ export default function Home() {
                             </LinkButton>
                         </div>
 
-                        <ListRoot>
-                            <ListItem
-                                title="Warranty documents"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconArrowUp />
-                            </ListItem>
+                        <ul className="flex flex-col gap-8 py-2 w-fit">
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconArrowUp />
+                                </div>
 
-                            <ListItem
-                                title="Quick credi"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconCard />
-                            </ListItem>
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Warranty documents
+                                    </h6>
 
-                            <ListItem
-                                title="Create a deposit"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconDownload />
-                            </ListItem>
-                        </ListRoot>
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconCard />
+                                </div>
+
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Quick credit
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconDownload />
+                                </div>
+
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Create a deposit
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                     <div className="flex-1 relative flex items-center justify-center px-5">
@@ -792,28 +839,58 @@ export default function Home() {
                             description="Revid Card features an RFID transponder in its core that enables you to pay with a touch-free wave"
                         />
 
-                        <ListRoot>
-                            <ListItem
-                                title="Acesso a salas VIP"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconVip />
-                            </ListItem>
+                        <ul className="flex flex-col gap-8 py-2 w-fit">
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconVip />
+                                </div>
 
-                            <ListItem
-                                title="Cartão virtual"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconCardVirtual />
-                            </ListItem>
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Acesso a salas VIP
+                                    </h6>
 
-                            <ListItem
-                                title="Create a deposit"
-                                description="An obligation in which a third party agrees to repay a debt."
-                            >
-                                <IconDownload />
-                            </ListItem>
-                        </ListRoot>
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconCardVirtual />
+                                </div>
+
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Cartão virtual
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li className="flex items-center justify-center gap-2">
+                                <div className="size-14 rounded-full bg-secondary-700/40 flex items-center justify-center">
+                                    <IconDownload />
+                                </div>
+
+                                <div className="flex-1 flex flex-col gap-1">
+                                    <h6 className="font-header font-bold text-base text-black-light">
+                                        Create a deposit
+                                    </h6>
+
+                                    <p className="font-body text-base font-light leading-7 text-gray-7">
+                                        An obligation in which a third party
+                                        agrees to repay a debt.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
