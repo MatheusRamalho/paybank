@@ -9,7 +9,7 @@ import { IconTwitter } from '@/components/IconTwitter'
 import { IconYoutube } from '@/components/IconYoutube'
 import { IconGoogleplay } from '@/components/IconGoogleplay'
 import { IconApple } from '@/components/IconApple'
-import { Newsletter } from './Newsletter'
+import { Newsletter } from '@/components/Newsletter'
 
 export function Footer() {
     return (
