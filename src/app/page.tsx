@@ -325,28 +325,28 @@ export default function Home() {
                         </LinkButton>
                     </div>
 
-                    <List.Root>
-                        <List.Item
+                    <ListRoot>
+                        <ListItem
                             title="Warranty documents"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconArrowUp />
-                        </List.Item>
+                        </ListItem>
 
-                        <List.Item
+                        <ListItem
                             title="Quick credi"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconCard />
-                        </List.Item>
+                        </ListItem>
 
-                        <List.Item
+                        <ListItem
                             title="Create a deposit"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconDownload />
-                        </List.Item>
-                    </List.Root>
+                        </ListItem>
+                    </ListRoot>
                 </div>
 
                 <div className="flex-1 relative flex items-center justify-center px-5">
@@ -745,28 +745,28 @@ export default function Home() {
                         description="Revid Card features an RFID transponder in its core that enables you to pay with a touch-free wave"
                     />
 
-                    <List.Root>
-                        <List.Item
+                    <ListRoot>
+                        <ListItem
                             title="Acesso a salas VIP"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconVip />
-                        </List.Item>
+                        </ListItem>
 
-                        <List.Item
+                        <ListItem
                             title="Cartão virtual"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconCardVirtual />
-                        </List.Item>
+                        </ListItem>
 
-                        <List.Item
+                        <ListItem
                             title="Create a deposit"
                             description="An obligation in which a third party agrees to repay a debt."
                         >
                             <IconDownload />
-                        </List.Item>
-                    </List.Root>
+                        </ListItem>
+                    </ListRoot>
                 </div>
             </Section>
 
