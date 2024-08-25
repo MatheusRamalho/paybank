@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 interface SectionProps {
     id: string
-    legend: string
+    legend?: string
     children: ReactNode
     className?: string
 }
