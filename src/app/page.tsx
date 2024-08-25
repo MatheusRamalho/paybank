@@ -34,8 +34,8 @@ import { IconSmartphone } from '@/components/IconSmartphone'
 import { IconGoogleplay } from '@/components/IconGoogleplay'
 import { IconFingerprint } from '@/components/IconFingerprint'
 import { IconCardVirtual } from '@/components/IconCardVirtual'
-import { List } from '../components/List'
-import { Section } from '../components/Section'
+import { ListItem, ListRoot } from '@/components/List'
+import { Section } from '@/components/Section'
 
 import fig4 from '@/assets/imgs/fig4-paybank.png'
 import fig10 from '@/assets/imgs/fig10-paybank.png'
@@ -283,21 +283,21 @@ export default function Home() {
                         description="Lorem ipsum dolor sit amet consectetur. Et ut tempus facilisis tristique. Vitae consequat vel tortor aenean imperdiet posuere neque. Sollicitudin at at volutpat scelerisque ut aliquet velit tempor."
                     />
 
-                    <List.Root>
-                        <List.Item
+                    <ListRoot>
+                        <ListItem
                             title="Controle total sobre seus gastos"
                             description="Tudo na palma da sua mão"
                         >
                             <IconChart />
-                        </List.Item>
+                        </ListItem>
 
-                        <List.Item
+                        <ListItem
                             title="Acesso a uma carteira de investimentos"
                             description="Tudo na palma da sua mão"
                         >
                             <IconInvestment />
-                        </List.Item>
-                    </List.Root>
+                        </ListItem>
+                    </ListRoot>
                 </div>
 
                 <div className="flex-1 flex items-center justify-center">

@@ -17,8 +17,7 @@ export function Section({ id, legend, children, className }: SectionProps) {
             <h6 hidden> {legend} </h6>
 
             <div className="flex items-center justify-center gap-10 flex-col lg:flex-row">
-                {' '}
-                {children}{' '}
+                {children}
             </div>
         </section>
     )
